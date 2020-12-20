@@ -41,16 +41,6 @@ const mockups = [
 ]
 
 const Mockups = () => {
-
-    let sliderValue
-    if (window.innerWidth <= 320) {
-        sliderValue = 190
-    } else if (window.innerWidth < 600) {
-        sliderValue = 180
-    } else {
-        sliderValue = 110
-    }
-
     const displayMockups = () => {
         return mockups.map((mockup, i) => {
             return(
@@ -97,7 +87,7 @@ const Mockups = () => {
             </CarouselProvider>
             <CarouselProvider
                 naturalSlideWidth={100}
-                naturalSlideHeight={sliderValue}
+                naturalSlideHeight={190}
                 totalSlides={mockups.length}
                 visibleSlides={1}
                 className="featured-project-slider-small"

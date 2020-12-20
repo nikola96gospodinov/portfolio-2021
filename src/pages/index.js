@@ -36,26 +36,6 @@ const images = [
   {path: WordpressLogo, alt: "WordPress Logo", link: "https://wordpress.com/"}
 ]
 
-let techHeight
-
-if (window.innerWidth <= 320) {
-  techHeight = 35
-} else if (window.innerWidth < 400) {
-  techHeight = 30
-} else {
-  techHeight = 25
-}
-
-let techHeight2
-
-if (window.innerWidth >= 1600 ) {
-  techHeight2 = 35
-} else if (window.innerWidth > 1024) {
-  techHeight2 = 40
-} else {
-  techHeight2 = 45
-}
-
 const IndexPage = () => (
   <Layout>
     <SEO 
@@ -88,7 +68,7 @@ const IndexPage = () => (
         {/* Slider desktop */}
         <CarouselProvider
               naturalSlideWidth={100}
-              naturalSlideHeight={techHeight2}
+              naturalSlideHeight={45}
               totalSlides={images.length}
               isPlaying={true}
               interval={3000}
@@ -138,7 +118,7 @@ const IndexPage = () => (
         {/* Slider mobile */}
         <CarouselProvider
               naturalSlideWidth={100}
-              naturalSlideHeight={techHeight}
+              naturalSlideHeight={35}
               totalSlides={images.length}
               isPlaying={true}
               interval={3000}
