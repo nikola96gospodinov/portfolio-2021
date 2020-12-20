@@ -1,11 +1,19 @@
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
-    description: `This is my portfolio`,
+    description: `Nik Gospodinov is a full stack web developer who uses mainly React and JavaScript.`,
     author: `Nik Gospodinov`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://portfolio-nik.netlify.app/',
+        sitemap: 'https://portfolio-nik.netlify.app/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,7 +33,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/nik-logo-minimal.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

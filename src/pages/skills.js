@@ -13,7 +13,10 @@ import '../styles/skills.scss'
 
 const SkillsPage = () => (
     <Layout>
-        <SEO title="Skills"/>
+        <SEO 
+            title="Skills"
+            image={Banner}    
+        />
 
         <div className="banner banner-skills">
             <div className="container">

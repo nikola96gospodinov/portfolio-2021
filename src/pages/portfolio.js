@@ -66,7 +66,10 @@ const PortfolioPage = () => {
 
     return (
         <Layout>
-            <SEO title="Portfolio"/>
+            <SEO 
+                title="Portfolio"
+                image={Banner}
+            />
             
             <div className="portfolio-banner banner">
                 <div className="container">

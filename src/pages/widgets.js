@@ -11,7 +11,10 @@ import '../styles/widgets.scss'
 
 const WidgetsPage = () => (
     <Layout>
-        <SEO title="Widgets"/>
+        <SEO 
+            title="Widgets"
+            image={Banner}
+        />
 
         <div className="banner banner-widgets">
             <div className="container">

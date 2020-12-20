@@ -10,7 +10,10 @@ import '../styles/error.scss'
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO 
+      title="404: Not found" 
+      image={Banner}  
+    />
     <div className="error">
       <div class="container">
         <div className="double-grid">

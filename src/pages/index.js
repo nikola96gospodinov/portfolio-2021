@@ -41,6 +41,7 @@ const IndexPage = () => (
     <SEO 
       title="Home" 
       description="Nik Gospodinov is a full stack web developer who uses mainly React and JavaScript."
+      image={Banner}
     />
 
     <div class="banner">

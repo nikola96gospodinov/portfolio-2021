@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Form from '../components/contact-form'
 
+import Picture from '../images/about-banner.jpg'
 import BioIllustration from '../images/about-bio.png'
 import UniDegree from '../images/certificate.png'
 import Clock from '../images/clock.png'
@@ -15,7 +16,10 @@ import '../styles/about.scss'
 
 const AboutPage = () => (
     <Layout>
-        <SEO title="About"/>
+        <SEO 
+            title="About"
+            image={Picture}
+        />
 
         <div className="banner banner-about">
             <div className="container">
