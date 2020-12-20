@@ -1,0 +1,148 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import "./variables.scss";
+
+// Global styling
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: $neutral-color-light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.sub-heading {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    color: $neutral-color-dark;
+    background: linear-gradient(to top, $primary-color-light-2 35%, transparent 35%);
+    display: inline;
+}
+
+.small-heading {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    color: $neutral-color-dark-2;
+}
+
+.center-container {
+    text-align: center;
+}
+
+.outer-container {
+    padding-bottom: 5rem;
+}
+
+.double-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.triple-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.two-one-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+.active {
+    color: $primary-color-light-5;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 768px;
+    }
+
+    .sub-heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 600px;
+    }
+
+    .outer-container {
+        padding-bottom: 3rem;
+    }
+
+    .sub-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .outer-container {
+        padding-bottom: 2rem;
+    }
+
+    .sub-heading {
+        font-size: 1.8rem;
+    }
+
+    .button {
+        padding: 11px 25px;
+    }
+
+    .double-grid, .triple-grid {
+        display: block;
+    }
+}
+
+@media (max-width: 320px) {
+    .sub-heading {
+        font-size: 1.6rem;
+    }
+
+    .button {
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        width: 1368px;
+    }
+
+    .button {
+        padding: 13px 40px;
+    }
+
+    .sub-heading {
+        font-size: 2.8rem;
+    }
+}

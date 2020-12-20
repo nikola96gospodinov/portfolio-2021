@@ -1,0 +1,264 @@
+@import '../styles/variables.scss';
+
+.banner-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .double-grid {
+        align-items: center;
+    }
+
+    h1 {
+        color: $neutral-color-light;
+        font-size: 3.25rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    h2 {
+        color: $neutral-color-light-3;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        margin-right: 4rem;
+        font-size: 1.8rem;
+    }
+
+    a {
+        background-color: $primary-color-dark-5;
+        color: $neutral-color-light;
+        font-size: 18px;
+    }
+
+    a:hover {
+        background-color: $secondary-color-dark-5;
+    }
+
+    .circle {
+        div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50% 100%;
+            background-color: $neutral-color-light-4;
+            transition: .3s ease;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        div:hover {
+            border-radius: 100% 50%;
+        }
+    }
+}
+
+.skill-list {
+    padding-top: 5rem;
+    background: radial-gradient(at left top, $neutral-color-light-2 65%, $neutral-color-light 65%);
+
+    .skills {
+        p {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            color: $neutral-color-dark;
+            margin-bottom: .75rem;
+        }
+
+        ul {
+            margin-bottom: 2rem;
+        }
+
+        li {
+            margin-left: 2rem;
+            color: $neutral-color-dark;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+    }
+
+    .cv {
+
+        div {
+            background: radial-gradient(at left top, $neutral-color-dark-2 65%, $neutral-color-dark 65%);
+            position: sticky;
+            top: 0;
+            transform: translateY(20px);
+            border-radius: 1rem;
+            box-shadow: $shadow;
+            padding: 2rem;
+        }
+
+        h3 {
+            color: $neutral-color-light;
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+        }
+
+        p {
+            color: $neutral-color-light;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            background: $primary-color-dark-5;
+            color: $neutral-color-light;
+        }
+
+        a:hover {
+            background: $secondary-color-dark-5;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner-skills {
+        h1 {
+            font-size: 2.6rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    .skill-list {
+        .two-one-grid {
+            grid-template-columns: 3fr 2fr;
+        }
+
+        .skills {
+            p {
+                font-size: 1.2rem;
+            }
+
+            li {
+                font-size: 1rem;
+            }
+        }
+
+        .cv {
+            div {
+                padding: 1.5rem;
+            }
+
+            a {
+                font-size: 15px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-skills {
+        h1 {
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        a {
+            font-size: 15px;
+            margin-left: 1rem;
+        }
+    }
+
+    .skill-list {
+        padding-top: 3rem;
+
+        .two-one-grid {
+            display: block;
+        }
+
+        .container {
+            width: 580px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-skills {
+        .double-grid {
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                text-align: center;
+
+                h2 {
+                    margin: .75rem 1rem;
+                }
+            }
+        }
+    }
+
+    .skill-list {
+        padding-top: 2rem;
+
+        .container {
+            width: 95%;
+        }
+
+        .cv {
+            div {
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .banner-skills {
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        a {
+            font-size: 20px;
+        }
+    }
+
+    .skill-list {
+        .skills {
+            p {
+                font-size: 1.5rem;
+            }
+
+            li {
+                font-size: 1.25rem;
+            }
+        }
+
+        .cv {
+            h3 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}

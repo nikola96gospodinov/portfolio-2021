@@ -1,0 +1,268 @@
+@import '../styles/variables.scss';
+
+.banner-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        color: $neutral-color-light;
+        font-size: 3.25rem;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        span {
+            color: $primary-color-light-4;
+        }
+    }
+
+    h2 {
+        color: $neutral-color-light-3;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        margin-right: 4rem;
+        font-size: 1.8rem;
+    }
+
+    a {
+        background: $primary-color-dark-5;
+        color: $neutral-color-light;
+        font-size: 18px;
+    }
+
+    a:hover {
+        background: $secondary-color-dark-5;
+    }
+
+    .double-grid {
+        align-items: center;
+    }
+
+    .circle {
+
+        div {
+            width: 100%;
+            height: 100%;
+            border-radius: 50% 100%;
+            background: url(../images/about-banner.jpg);
+            transition: .3s ease;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        div:hover {
+            border-radius: 100% 50%;
+        }
+    }
+}
+
+.bio {
+    padding-top: 5rem;
+
+    .double-grid {
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        font-size: 18px;
+        color: $neutral-color-dark;
+        margin: 2rem 0 1rem 0;
+        line-height: 1.4;
+    }
+
+    a {
+        background: $primary-color-dark-5;
+        color: $neutral-color-light;
+        font-size: 18px;
+    }
+
+    a:hover {
+        background: $secondary-color-dark-5;
+    }
+}
+
+.summary {
+    background: radial-gradient(at left bottom, $neutral-color-light-2 65%, transparent 65%);
+
+    .triple-grid {
+        margin: 3rem 0;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                color: $neutral-color-dark;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+
+    img {
+        width: 100px;
+        margin-bottom: 2rem;
+    }
+
+    a {
+        background: $primary-color-dark-5;
+        color: $neutral-color-light;
+        font-size: 18px;
+    }
+
+    a:hover {
+        background: $secondary-color-dark-5;
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner-about {
+        h1 {
+            font-size: 2.6rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    .bio p, .bio a {
+        font-size: 1rem;
+    }
+
+    .summary {
+        img {
+            width: 75px;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+
+        .triple-grid {
+            div {
+                span {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-about {
+        h1 {
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        a {
+            font-size: 15px;
+            margin-left: 1rem;
+        }
+    }
+
+    .bio {
+        padding-top: 3rem;
+    }
+
+    .bio p, .bio a, .summary a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-about {
+        .double-grid {
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                text-align: center;
+
+                h2 {
+                    margin: .75rem 1rem;
+                }
+            }
+        }
+    }
+
+    .bio {
+        text-align: center;
+        
+        img {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .summary {
+        img {
+            width: 100px;
+            margin-top: 2rem;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .banner-about {
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        a {
+            font-size: 20px;
+        }
+
+        .circle {
+            div {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+    .bio p, .bio a {
+        font-size: 20px;
+    }
+
+    .summary {
+        img {
+            width: 125px;
+        }
+
+        a {
+            font-size: 20px;
+        }
+
+        .triple-grid {
+            div {
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

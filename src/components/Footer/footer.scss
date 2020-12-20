@@ -1,0 +1,115 @@
+@import '../../styles/variables.scss';
+
+footer {
+    background: linear-gradient(to right, $neutral-color-dark, $neutral-color-dark-2);
+    padding: 1.5rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 200px 3fr 2fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.footer-grid img {
+    width: 75%;
+}
+
+.footer-grid .navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-grid .navigation a {
+    padding: 0 1rem;
+    color: $neutral-color-light;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-grid .navigation a:hover {
+    background: linear-gradient(to top, $primary-color-dark-2 45%, transparent 45%);
+}
+
+.footer-grid .connect {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-grid .connect a {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 .5rem;
+    color: $neutral-color-light;
+    font-size: 1.5rem;
+    background-color: $neutral-color-dark-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.footer-grid .connect a:hover {
+    color: $neutral-color-dark-4;
+    background-color: $neutral-color-light;
+}
+
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 175px 3fr 2fr;
+    }
+
+    .footer-grid .navigation a {
+        padding: 0 .75rem;
+    }
+
+    .footer-grid .connect a {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        margin: 0 .4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-grid img {
+        width: 150px;
+        margin-bottom: .75rem;
+    }
+
+    .footer-grid .navigation {
+        margin-bottom: .75rem;
+    }
+
+    .footer-grid .connect {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer-grid .navigation a {
+        padding: 0 .5rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .footer-grid {
+        grid-template-columns: 250px 3fr 2fr;
+    }
+    
+    .footer-grid .navigation a {
+        font-size: 20px;
+    }
+
+    .footer-grid .connect a {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+}
