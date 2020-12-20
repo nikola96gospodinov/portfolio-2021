@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Slider from 'react-slick'
 
 import WeatherApp from '../../images/weather-app-mockup.png'
 import THCDreams from '../../images/thc-dreams-mockup.png'
@@ -14,6 +13,10 @@ import NodejsSmall from '../../images/nodejs-logo-small.png'
 import HTMLLogo from '../../images/html-logo.png'
 import CSSLogo from '../../images/css-logo.png'
 import GraphQLLogo from '../../images/graphql-logo-small.png'
+
+
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 import './mockups.scss'
 
@@ -40,11 +43,20 @@ const mockups = [
     }
 ]
 
-const Mockups = () => {
+const MockupsNew = () => {
+
+    const settings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 2
+    }
+
     const displayMockups = () => {
         return mockups.map((mockup, i) => {
             return(
-                <Slide>
+                <div>
                     <div className="mockup-cell" key={i}>
                         <div className="logos">
                             <p>Stack:</p>
@@ -63,45 +75,18 @@ const Mockups = () => {
                             <Link className="button" to={mockup.link}>View project</Link>
                         </div>
                     </div>
-                </Slide>
+                </div>
             )
         })
     }
 
     return (
         <>
-            <CarouselProvider
-                naturalSlideWidth={100}
-                naturalSlideHeight={45}
-                totalSlides={mockups.length}
-                visibleSlides={1}
-                className="featured-project-slider"
-            >
-                <div className="arrow-grid">
-                    <ButtonBack><FontAwesomeIcon icon={['fas', 'chevron-left']}/></ButtonBack>
-                    <Slider>
-                        {displayMockups()}
-                    </Slider>
-                    <ButtonNext><FontAwesomeIcon icon={['fas', 'chevron-right']}/></ButtonNext>
-                </div>
-            </CarouselProvider>
-            <CarouselProvider
-                naturalSlideWidth={100}
-                naturalSlideHeight={190}
-                totalSlides={mockups.length}
-                visibleSlides={1}
-                className="featured-project-slider-small"
-            >
-                <div className="arrow-grid">
-                    <ButtonBack><FontAwesomeIcon icon={['fas', 'chevron-left']}/></ButtonBack>
-                    <Slider>
-                        {displayMockups()}
-                    </Slider>
-                    <ButtonNext><FontAwesomeIcon icon={['fas', 'chevron-right']}/></ButtonNext>
-                </div>
-            </CarouselProvider>
+            <Slider {...settings}>
+                {displayMockups()}
+            </Slider>
         </>
     )
 }
 
-export default Mockups
+export default MockupsNew

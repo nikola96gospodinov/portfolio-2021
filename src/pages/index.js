@@ -9,7 +9,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Form from '../components/contact-form'
 import Mockups from '../page-parts/Home/Mockups'
-import MockupsNew from '../page-parts/Home/MockupsNew'
 
 // Images 
 import Banner from '../images/banner.png'
@@ -153,7 +152,6 @@ const IndexPage = () => (
           <h2 className="sub-heading">Featured Projects</h2>
         </div>
         <Mockups/>
-        <MockupsNew/>
         <div className="center-container">
           <Link className="button" to="/portfolio">See all projects</Link>
         </div>
