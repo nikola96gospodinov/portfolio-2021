@@ -179,6 +179,8 @@
 
 @media (max-width: 600px) {
     .featured-project-slider-small {
+        margin-bottom: -8.5rem;
+
         .mockup-cell {
             .logos {
                 p {
@@ -214,8 +216,16 @@
     }
 }
 
+@media (max-width: 400px) {
+    .featured-project-slider-small {
+        margin-bottom: -3.5rem;
+    }
+}
+
 @media (max-width: 320px) {
     .featured-project-slider-small {
+        margin-bottom: 0;
+
         .mockup-cell {
             img {
                 margin: .75rem auto -.75rem auto;

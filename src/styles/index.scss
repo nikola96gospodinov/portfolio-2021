@@ -286,7 +286,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .banner-inner {
         display: flex;
         flex-direction: column-reverse;
@@ -307,6 +307,7 @@
 
     .skills-slider-mobile {
         display: block;
+        margin-bottom: -1.5rem;
 
         img {
             width: 200px;
@@ -330,6 +331,10 @@
     .circle {
         width: 275px;
         height: 275px;
+    }
+    
+    .skills-slider-mobile {
+        margin: 0;
     }
 }
 
