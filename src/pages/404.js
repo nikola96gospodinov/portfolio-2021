@@ -20,7 +20,7 @@ const NotFoundPage = () => (
             <Link to="/" className="button">Back to homepage</Link>
           </div>
           <div className="circle">
-            <div>
+            <div> 
               <img src={Banner} alt="Illustration of a woman in front of a screen with a 404 error"/>
             </div>
           </div>

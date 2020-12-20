@@ -8,7 +8,7 @@ import THCDreams from '../../images/thc-dreams-mockup.png'
 
 // Logos
 import ReactSmall from '../../images/react-logo-small.png'
-import GatsbySmall from '../../images/Gatsby-Logo-small.png'
+import GatsbySmall from '../../images/gatsby-logo-small.png'
 import StrapiSmall from '../../images/strapi-logo-small.png'
 import NodejsSmall from '../../images/nodejs-logo-small.png'
 import HTMLLogo from '../../images/html-logo.png'

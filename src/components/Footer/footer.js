@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Logo from '../../images/Nik-logo-small.png'
+import Logo from '../../images/nik-logo-small.png'
 
 import './footer.scss'
 

@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-import Logo from '../../images/Nik-logo.png'
+import Logo from '../../images/nik-logo.png'
 
 import './header.scss'
 
