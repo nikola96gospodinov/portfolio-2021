@@ -47,8 +47,8 @@ const SkillsPage = () => (
                             <li><b>Strapi</b></li>
                             <li><b>GraphQL</b></li>
                             <li><b>JavaScript</b></li>
-                            <li>Responsive, cross-borwser <b>CSS/HTML</b></li>
-                            <li><b>Photoshop CC</b></li>
+                            <li>Responsive, cross-browser <b>CSS/HTML</b></li>
+                            <li><b>PhotoShop CC</b></li>
                         </ul>
                         <h2 className="sub-heading">Secondary Skills</h2>
                         <p>Those are the skills that I use on a less regular basis but I am still proficient at:</p>

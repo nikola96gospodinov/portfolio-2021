@@ -167,7 +167,7 @@ const IndexPage = () => (
         <div className="icon-grid">
           <div>
             <img src={Icon1} alt="icon of computer screen, tablet and smartphone"/>
-            <h3 className="small-heading">Responsive accross devices</h3>
+            <h3 className="small-heading">Responsive across devices</h3>
             <p>All the pages are extensively tested across different devices ensuring that your website looks good on all resolutions.</p>
           </div>
           <div>
@@ -177,7 +177,7 @@ const IndexPage = () => (
           </div>
           <div>
             <img src={Icon3} alt="icon of a computer screen with different elements on it"/>
-            <h3 className="small-heading">Unique Desgin</h3>
+            <h3 className="small-heading">Unique Design</h3>
             <p>The entire site is built from scratch without the use of themes and templates.</p>
           </div>
         </div>

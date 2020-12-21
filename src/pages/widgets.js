@@ -26,7 +26,7 @@ const WidgetsPage = () => (
                     </div>
                     <div className="circle">
                         <div>
-                            <img src={Banner} alt="widget ilustration"/>
+                            <img src={Banner} alt="widget illustration"/>
                         </div>
                     </div>
                 </div>
