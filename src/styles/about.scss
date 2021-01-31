@@ -19,19 +19,8 @@
     h2 {
         color: $neutral-color-light-3;
         font-weight: 500;
-        margin-bottom: 2rem;
         margin-right: 4rem;
         font-size: 1.8rem;
-    }
-
-    a {
-        background: $primary-color-dark-5;
-        color: $neutral-color-light;
-        font-size: 18px;
-    }
-
-    a:hover {
-        background: $secondary-color-dark-5;
     }
 
     .double-grid {
@@ -58,10 +47,11 @@
 }
 
 .bio {
-    padding-top: 5rem;
+    padding-top: 7rem;
 
     .double-grid {
         align-items: center;
+        grid-gap: 2rem;
     }
 
     img {
@@ -180,7 +170,7 @@
     }
 
     .bio {
-        padding-top: 3rem;
+        padding-top: 4rem;
     }
 
     .bio p, .bio a, .summary a {
@@ -264,5 +254,9 @@
                 }
             }
         }
+    }
+
+    .bio {
+        padding-top: 8rem;
     }
 }

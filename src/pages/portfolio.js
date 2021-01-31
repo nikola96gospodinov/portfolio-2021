@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import Layout from '../components/layout'
@@ -7,20 +6,20 @@ import SEO from '../components/seo'
 import Form from '../components/contact-form'
 
 import Banner from '../images/portfolio-banner.png'
-import THCDreams from '../images/thc-dreams-mockup.png'
+import PCHProductions from '../images/pch-productions.png'
 import WeatherApp from '../images/weather-app-mockup.png'
 
 import '../styles/portfolio.scss'
 
 const projects = [
     {
-        name: 'P.Ch. Photography',
+        name: 'P.Ch. Productions',
         pic: {
-            path: THCDreams,
-            alt: 'THC Dreams mockup on laptop'
+            path: PCHProductions,
+            alt: 'P.Ch. Productions mockup on laptop'
         },
         description: 'A website developed for a photographer who can add new photos himself.',
-        link: '/portfolio/pchphotography',
+        link: 'https://pch-productions.netlify.app/',
         technologies: ['React', 'Gatsby', 'Strapi', 'GraphQL']
     },
     {
@@ -30,37 +29,26 @@ const projects = [
             alt: 'Weather app mockup on laptop'
         },
         description: "A simple app that gives you the current weather based on the location that you've entered.",
-        link: '/portfolio/weather-app',
+        link: 'https://gospodinov-weather-app.herokuapp.com/',
         technologies: ['HTML', 'CSS', 'Node.js']
-    },
-    {
-        name: 'Project 3',
-        pic: {
-            path: THCDreams,
-            alt: 'THC Dreams mockup on laptop'
-        },
-        description: 'This is the third project of my portfolio',
-        link: '/portfolio/project-3',
-        technologies: ['React', 'Node.js']
-    },
-    {
-        name: 'Project 4',
-        pic: {
-            path: WeatherApp,
-            alt: 'Weather app mockup on laptop'
-        },
-        description: 'This is the fourth project of my portfolio',
-        link: '/portfolio/project-4',
-        technologies: ['HTML', 'CSS', 'WordPress']
     }
+]
+
+const languages = [
+    'Show all',
+    'React',
+    'Gatsby',
+    'Strapi',
+    'HTML',
+    'Node.js'
 ]
 
 const PortfolioPage = () => {
 
-    const [tech, setTech] = useState('')
+    const [tech, setTech] = useState('Show all')
 
     const filteredProjects =
-    tech === ""
+    tech === "Show all"
       ? projects
       : projects.filter(project => project.technologies.includes(tech))
 
@@ -77,7 +65,13 @@ const PortfolioPage = () => {
                         <div>
                             <h1>Portfolio</h1>
                             <h2>See examples of my work</h2>
-                            <AnchorLink href="#portfolio-items" className="button">See Projects</AnchorLink>
+                            <AnchorLink href="#portfolio-items" className="cta">
+                                <span>Learn more</span>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </AnchorLink>
                         </div>
                         <div className="circle">
                             <div>
@@ -91,12 +85,18 @@ const PortfolioPage = () => {
             <div className="portfolio-items outer-container" id="portfolio-items">
                 <div className="container">
                     <div>
-                        <button onClick={() => setTech('')}>Show all</button>
-                        <button onClick={() => setTech('React')}>React</button>
-                        <button onClick={() => setTech('Gatsby')}>Gatsby</button>
-                        <button onClick={() => setTech('Strapi')}>Strapi</button>
-                        <button onClick={() => setTech('HTML')}>HTML</button>
-                        <button onClick={() => setTech('Node.js')}>Node.js</button>
+                        {
+                            languages.map(lang => {
+                                return (
+                                    <button 
+                                        onClick={() => setTech(lang)}
+                                        className={
+                                            lang === tech ? "active-button" : ""
+                                        }
+                                    >{lang}</button>
+                                )
+                            })
+                        }
                     </div>
                     <div className="triple-grid">
                         {filteredProjects.map((filteredProject) => {
@@ -115,13 +115,20 @@ const PortfolioPage = () => {
                                                 })}
                                             </ul>
                                         </div>
-                                        <Link className="button" to={filteredProject.link}>See project</Link>
+                                        <a className="button" href={filteredProject.link} target="_blank" rel="ugc">See project</a>
                                     </div>
                                 </div>
                             )
                         })}
                     </div>
                 </div>
+            </div>
+
+            <div className="outer-container container">
+                <p style={{
+                    fontSize: '1.5rem',
+                    textDecoration: 'underline'
+                }}>More projects to be added soon!</p>
             </div>
 
             <div className="contact outer-container" id="contact-form">

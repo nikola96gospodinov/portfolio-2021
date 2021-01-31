@@ -49,7 +49,13 @@ const IndexPage = () => (
         <div className="banner-text">
           <h1>Nik Gospodinov</h1>
           <h2>Full Stack Developer</h2>
-          <AnchorLink href="#main-technologies" className="button">Learn more</AnchorLink>
+          <AnchorLink href="#main-technologies" className="cta">
+          <span>Learn more</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </AnchorLink>
         </div>
         <div className="banner-image">
           <div className="circle">

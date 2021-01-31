@@ -1,9 +1,8 @@
 import React from 'react'
-import {Link} from 'gatsby'
 import Slider from 'react-slick'
 
 import WeatherApp from '../../images/weather-app-mockup.png'
-import THCDreams from '../../images/thc-dreams-mockup.png'
+import PCHProductions from '../../images/pch-productions.png'
 
 // Logos
 import ReactSmall from '../../images/react-logo-small.png'
@@ -29,17 +28,17 @@ const mockups = [
         title: "Weather App",
         description: "A simple app that gives you the current weather based on the location that you've entered.",
         stack: [{path: NodejsSmall, alt: "Small Nodejs Logo"}, {path: HTMLLogo, alt: "Small HTML5 Logo"}, {path: CSSLogo, alt: "Small CSS Logo"}],
-        link: "/weather-app"
+        link: "https://gospodinov-weather-app.herokuapp.com/"
     },
     {
         image: {
-            path: THCDreams,
-            alt: 'A mockup of THC Dream\'s website'
+            path: PCHProductions,
+            alt: 'A mockup of P.Ch. Productions\' website'
         },
-        title: "P.Ch. Photography",
+        title: "P.Ch. Productions",
         description: "A website developed for a photographer who can add new photos himself.",
         stack: [{path: ReactSmall, alt: "Small React Logo"}, {path: GatsbySmall, alt: "Small Gatsby Logo"}, {path: StrapiSmall, alt: "Small Strapi Logo"}, {path: GraphQLLogo, alt: "Small GraphQL Logo"}],
-        link: "/p-ch-photography"
+        link: "https://pch-productions.netlify.app/"
     }
 ]
 
@@ -72,7 +71,7 @@ const MockupsNew = () => {
                         <div className="content">
                             <h3 className="small-heading">{mockup.title}</h3>
                             <p>{mockup.description}</p>
-                            <Link className="button" to={mockup.link}>View project</Link>
+                            <a className="button" href={mockup.link} target="_blank" rel="ugc">View project</a>
                         </div>
                     </div>
                 </div>

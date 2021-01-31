@@ -30,14 +30,9 @@
 }
 
 .banner-text a {
-    background-color: $primary-color-dark-5;
-    margin-top: 20px;
+    margin-top: 2rem;
     font-size: 18px;
-    color: $neutral-color-light;
-}
-
-.banner-text a:hover {
-    background-color: $secondary-color-dark-5;
+    display: inline-block;
 }
 
 .circle {
@@ -72,7 +67,7 @@
 
 .main-technologies {
     background: radial-gradient(at left bottom, $neutral-color-light-2 65%, $neutral-color-light 65%);
-    padding-top: 5rem;
+    padding-top: 7rem;
 }
 
 .main-technologies .center-container:first-child {
@@ -139,7 +134,9 @@
 }
 
 .contact {
-    background: url(../images/contact-section.jpeg);
+    background: 
+        linear-gradient(rgba($neutral-color-dark, .7), rgba($neutral-color-dark,.8)), 
+        url(../images/contact-section.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -253,7 +250,7 @@
     }
 
     .main-technologies {
-        padding-top: 3rem;
+        padding-top: 4rem;
     }
 
     .skills-slider {
@@ -366,5 +363,9 @@
 
     .contact .contact-inner {
         width: 900px;
+    }
+
+    .main-technologies {
+        padding-top: 8rem;
     }
 }

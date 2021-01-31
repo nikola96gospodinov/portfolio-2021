@@ -22,7 +22,13 @@ const WidgetsPage = () => (
                     <div>
                         <h1>Widgets</h1>
                         <h2>Have a look through some of the best widgets that I have developed across my projects.</h2>
-                        <AnchorLink className="button">Learn more</AnchorLink>
+                        <AnchorLink href="#widgets" className="cta">
+                            <span>Learn more</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </AnchorLink>
                     </div>
                     <div className="circle">
                         <div>
@@ -33,7 +39,7 @@ const WidgetsPage = () => (
             </div>
         </div>
 
-        <div className="outer-container widgets">
+        <div className="outer-container widgets" id="widgets">
             <div className="container">
                 <div className="center-container">
                     <h2 className="sub-heading">Coming Soon</h2>

@@ -7,7 +7,7 @@
     align-items: center;
     background: $neutral-color-light;
     border-radius: 1rem;
-    box-shadow: $shadow;
+    box-shadow: $shadow-2;
     margin: 3rem 1.5rem 0 1.5rem;
 
     .logos {
@@ -17,11 +17,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: $shadow;
+        box-shadow: $shadow-2;
 
         img {
             width: 50%;
             margin: .5rem auto;
+            transition: .3s ease;
+        }
+
+        img:hover {
+            transform: scale(.8);
         }
 
         p {

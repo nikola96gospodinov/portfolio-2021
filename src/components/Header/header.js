@@ -22,13 +22,9 @@ const Header = () => {
               <li><Link activeClassName="active" to="/portfolio">Portfolio</Link></li>
               <li><Link activeClassName="active" to="/skills">Skills</Link></li>
               <li><Link activeClassName="active" to="/widgets">Widgets</Link></li>
-              <li><AnchorLink href="#contact-form">Contact</AnchorLink></li>
             </ul>
             <div>
-              <a href="mailto:nikola96gospodinov@gmail.com"><FontAwesomeIcon icon={['fas', 'envelope-open-text']}/></a>
-              <a href="tel:+447763979908"><FontAwesomeIcon icon={['fas', 'mobile-alt']}/></a>
-              <a href="https://www.linkedin.com/in/nikola-gospodinov-55154a125/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'linkedin']}/></a>
-              <a href="https://github.com/nikola96gospodinov" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'github']}/></a>
+              <AnchorLink className="button" href="#contact-form">Get in touch</AnchorLink>
             </div>
           </div>
           <div className="header-mobile">

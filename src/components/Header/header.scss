@@ -2,14 +2,17 @@
 
 header {
     background: linear-gradient(to right, $neutral-color-dark, $neutral-color-dark-2);
+    box-shadow: $shadow;
+    position: relative;
+    z-index: 2;
 }
 
 .header {
-    padding: 1rem 0;
+    padding: 1.25rem 0;
 }
 
 header img {
-    width: 200px;
+    width: 150px;
 }
 
 header ul {
@@ -31,16 +34,16 @@ header a:hover {
     color: $primary-color-light-5;
 }
 
-header svg {
-    color: #F5F7FA;
-    padding: .75rem;
-    width: 1.75rem!important;
-    height: 1.75rem!important;
-    cursor: pointer;
+header .button {
+    background: $primary-color-dark-5;
+    color: $neutral-color-light;
+    box-shadow: none;
+    padding: .7rem 2rem;
 }
 
-header svg:hover {
-    color: $primary-color-light-5;
+header .button:hover {
+    background: $neutral-color-light;
+    color: $neutral-color-dark;
 }
 
 .header {

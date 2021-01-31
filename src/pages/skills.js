@@ -24,7 +24,13 @@ const SkillsPage = () => (
                     <div>
                         <h1>Skills</h1>
                         <h2>With my wide range of skills I am capable of developing well rounded websites</h2>
-                        <AnchorLink href="#skill-list" className="button">Learn more</AnchorLink>
+                        <AnchorLink href="#skill-list" className="cta">
+                            <span>Learn more</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </AnchorLink>
                     </div>
                     <div className="circle">
                         <div>
