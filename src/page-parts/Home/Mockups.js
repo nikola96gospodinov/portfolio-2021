@@ -3,6 +3,7 @@ import Slider from 'react-slick'
 
 import WeatherApp from '../../images/weather-app-mockup.png'
 import PCHProductions from '../../images/pch-productions.png'
+import SpaceX from '../../images/space-x-api.png'
 
 // Logos
 import ReactSmall from '../../images/react-logo-small.png'
@@ -12,6 +13,7 @@ import NodejsSmall from '../../images/nodejs-logo-small.png'
 import HTMLLogo from '../../images/html-logo.png'
 import CSSLogo from '../../images/css-logo.png'
 import GraphQLLogo from '../../images/graphql-logo-small.png'
+import NextJSLogo from '../../images/next-js-logo-small.png'
 
 
 import "slick-carousel/slick/slick.css"
@@ -39,6 +41,16 @@ const mockups = [
         description: "A website developed for a photographer who can add new photos himself.",
         stack: [{path: ReactSmall, alt: "Small React Logo"}, {path: GatsbySmall, alt: "Small Gatsby Logo"}, {path: StrapiSmall, alt: "Small Strapi Logo"}, {path: GraphQLLogo, alt: "Small GraphQL Logo"}],
         link: "https://pch-productions.netlify.app/"
+    },
+    {
+        image: {
+            path: SpaceX,
+            alt: 'A mockup of SpaceX API project'
+        },
+        title: "SpaceX API",
+        description: "A web app developed with SpaceX's API which contains all the relevant data",
+        stack: [{path: ReactSmall, alt: "Small React Logo"}, {path: NextJSLogo, alt: "Small Next.js Logo"}],
+        link: "https://nik-space-x-api.vercel.app/"
     }
 ]
 
@@ -49,7 +61,7 @@ const MockupsNew = () => {
         infinite: false,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 2
+        slidesToScroll: 1
     }
 
     const displayMockups = () => {

@@ -8,6 +8,7 @@ import Form from '../components/contact-form'
 import Banner from '../images/portfolio-banner.png'
 import PCHProductions from '../images/pch-productions.png'
 import WeatherApp from '../images/weather-app-mockup.png'
+import SpaceX from '../images/space-x-api.png'
 
 import '../styles/portfolio.scss'
 
@@ -31,6 +32,16 @@ const projects = [
         description: "A simple app that gives you the current weather based on the location that you've entered.",
         link: 'https://gospodinov-weather-app.herokuapp.com/',
         technologies: ['HTML', 'CSS', 'Node.js']
+    },
+    {
+        name: 'SpaceX API',
+        pic: {
+            path: SpaceX,
+            alt: 'SpaceX API app mockup on laptop'
+        },
+        description: "A web app developed with SpaceX's API which contains all the relevant data",
+        link: 'https://nik-space-x-api.vercel.app/',
+        technologies: ['React', 'Next.js']
     }
 ]
 
@@ -38,6 +49,7 @@ const languages = [
     'Show all',
     'React',
     'Gatsby',
+    'Next.js',
     'Strapi',
     'HTML',
     'Node.js'

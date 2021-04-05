@@ -14,6 +14,7 @@ import Mockups from '../page-parts/Home/Mockups'
 import Banner from '../images/banner.png'
 import ReactLogo from '../images/react-logo.png'
 import GatsbyLogo from '../images/gatsby-logo.png'
+import NextJSLogo from '../images/next-js-logo.png'
 import StrapiLogo from '../images/strapi-logo.svg'
 import GraphQlLogo from '../images/graphql-logo.png'
 import NodejsLogo from '../images/nodejs-logo.png'
@@ -29,7 +30,8 @@ import "../styles/index.scss"
 
 const images = [
   {path: ReactLogo, alt: "React Logo", link: "https://reactjs.org/"}, 
-  {path: GatsbyLogo, alt: "Gatsby Logo", link: "https://www.gatsbyjs.com/"}, 
+  {path: GatsbyLogo, alt: "Gatsby Logo", link: "https://www.gatsbyjs.com/"},
+  {path: NextJSLogo, alt: "Next.js Logo", link: "https://nextjs.org/"},
   {path: StrapiLogo, alt: "Strapi Logo", link: "https://strapi.io/"}, 
   {path: GraphQlLogo, alt: "GraphQL Logo", link: "https://graphql.org/"}, 
   {path: NodejsLogo, alt: "Node.js Logo", link: "https://nodejs.org/en/"}, 
