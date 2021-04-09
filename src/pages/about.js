@@ -22,20 +22,22 @@ const AboutPage = () => (
         />
 
         <div className="banner banner-about">
-            <div className="container">
-                <div className="double-grid">
-                    <div>
-                        <h1>My name is <span>Nik!</span></h1>
-                        <h2>I am a full stack developer with an eye for design</h2>
-                        <AnchorLink href="#bio" className="cta">
-                            <span>Learn more</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </AnchorLink>
+            <div className="banner-o">
+                <div className="container">
+                    <div className="double-grid">
+                        <div>
+                            <h1>My name is <span>Nik!</span></h1>
+                            <h2>I am a full stack developer with an eye for design</h2>
+                            <AnchorLink href="#bio" className="cta">
+                                <span>Learn more</span>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </AnchorLink>
+                        </div>
+                        <div className="circle"><div></div></div>
                     </div>
-                    <div className="circle"><div></div></div>
                 </div>
             </div>
         </div>

@@ -65,7 +65,7 @@ const MockupsNew = () => {
     }
 
     const displayMockups = () => {
-        return mockups.map((mockup, i) => {
+        return mockups.reverse().map((mockup, i) => {
             return(
                 <div>
                     <div className="mockup-cell" key={i}>

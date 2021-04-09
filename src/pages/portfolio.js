@@ -72,22 +72,24 @@ const PortfolioPage = () => {
             />
             
             <div className="portfolio-banner banner">
-                <div className="container">
-                    <div className="double-grid">
-                        <div>
-                            <h1>Portfolio</h1>
-                            <h2>See examples of my work</h2>
-                            <AnchorLink href="#portfolio-items" className="cta">
-                                <span>Learn more</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                    <path d="M1,5 L11,5"></path>
-                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </AnchorLink>
-                        </div>
-                        <div className="circle">
+                <div className="banner-o">
+                    <div className="container">
+                        <div className="double-grid">
                             <div>
-                                <img src={Banner} alt="Portfolio illustration"/>
+                                <h1>Portfolio</h1>
+                                <h2>See examples of my work</h2>
+                                <AnchorLink href="#portfolio-items" className="cta">
+                                    <span>Learn more</span>
+                                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </AnchorLink>
+                            </div>
+                            <div className="circle">
+                                <div>
+                                    <img src={Banner} alt="Portfolio illustration"/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -133,14 +135,12 @@ const PortfolioPage = () => {
                             )
                         })}
                     </div>
+                    <p style={{
+                        fontSize: '1.5rem',
+                        textDecoration: 'underline',
+                        marginTop: '3rem'
+                    }}>More projects to be added soon!</p>
                 </div>
-            </div>
-
-            <div className="outer-container container">
-                <p style={{
-                    fontSize: '1.5rem',
-                    textDecoration: 'underline'
-                }}>More projects to be added soon!</p>
             </div>
 
             <div className="contact outer-container" id="contact-form">

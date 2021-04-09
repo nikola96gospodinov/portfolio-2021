@@ -104,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     color: $neutral-color-dark;
     background: linear-gradient(to top, $primary-color-light-2 35%, transparent 35%);
     display: inline;
+    border-radius: 1rem 0;
 }
 
 .small-heading {
@@ -155,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 834px) {
     .container {
-        width: 600px;
+        width: 580px;
     }
 
     .outer-container {
@@ -164,6 +165,20 @@ h1, h2, h3, h4, h5, h6 {
 
     .sub-heading {
         font-size: 2rem;
+    }
+
+    .cta {
+        margin-top: 1rem;
+        padding: 12px 25px;
+    }
+
+    .cta::before {
+        width: 44px;
+        height: 44px;
+    }
+
+    .cta span {
+        font-size: 14px;
     }
 }
 

@@ -2,10 +2,17 @@
 
 .banner {
     background-color: $neutral-color-dark;
-    background: radial-gradient(at left top, $neutral-color-dark-2 65%, $neutral-color-dark 65%);
-    height: 90vh;
+    background: radial-gradient(at top, $neutral-color-dark 70.75%, transparent 70.75%);
+    height: 85vh;
     display: flex;
     justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.banner-o {
+    height: 70vh;
+    width: 100%;
+    background:  radial-gradient(at bottom, $neutral-color-dark 50%, $neutral-color-dark-2);
 }
 
 .banner-inner {
@@ -44,6 +51,7 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 20px 1px rgba(200, 200, 200, 0.1);
+    margin-top: 10vh;
 }
 
 .circle-inner {
@@ -92,8 +100,8 @@
 .featured-images-container {
     height: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .main-technologies .center-container a {
@@ -226,8 +234,12 @@
 
 @media (max-width: 834px) {
     .banner {
-        height: 100%;
-        padding: 3rem 0;
+        height: 40vh;
+        margin-bottom: 0;
+    }
+
+    .banner-o {
+        height: 35vh;
     }
 
     .banner-text h1 {
@@ -247,6 +259,7 @@
     .circle {
         width: 250px;
         height: 250px;
+        margin-top: 5vh;
     }
 
     .main-technologies {
@@ -284,6 +297,16 @@
 }
 
 @media (max-width: 599px) {
+    .banner {
+        height: auto;
+        min-height: 95vh;
+    }
+
+    .banner-o {
+        //height: auto;
+        min-height: 90vh;
+    }
+
     .banner-inner {
         display: flex;
         flex-direction: column-reverse;
@@ -325,6 +348,14 @@
 }
 
 @media (max-width: 320px) {
+    .banner {
+        height: 125vh;
+    }
+
+    .banner-o {
+        height: 120vh;
+    }
+
     .circle {
         width: 275px;
         height: 275px;

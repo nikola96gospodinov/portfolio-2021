@@ -63,8 +63,9 @@ header .button:hover {
         color: $neutral-color-dark;
         border-radius: 50%;
         border: 2px solid $neutral-color-light;
-        width: 1.5rem!important;
-        height: 1.5rem!important;
+        width: 1.25rem!important;
+        height: 1.25rem!important;
+        padding: .5rem;
         cursor: pointer;
     }
 

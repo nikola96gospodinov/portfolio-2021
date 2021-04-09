@@ -19,22 +19,24 @@ const SkillsPage = () => (
         />
 
         <div className="banner banner-skills">
-            <div className="container">
-                <div className="double-grid">
-                    <div>
-                        <h1>Skills</h1>
-                        <h2>With my wide range of skills I am capable of developing well rounded websites</h2>
-                        <AnchorLink href="#skill-list" className="cta">
-                            <span>Learn more</span>
-                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </AnchorLink>
-                    </div>
-                    <div className="circle">
+            <div className="banner-o">
+                <div className="container">
+                    <div className="double-grid">
                         <div>
-                            <img src={Banner} alt="Skills illustration"/>
+                            <h1>Skills</h1>
+                            <h2>With my wide range of skills I am capable of developing well rounded websites</h2>
+                            <AnchorLink href="#skill-list" className="cta">
+                                <span>Learn more</span>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </AnchorLink>
+                        </div>
+                        <div className="circle">
+                            <div>
+                                <img src={Banner} alt="Skills illustration"/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -48,13 +50,12 @@ const SkillsPage = () => (
                         <h2 className="sub-heading">Main Skills</h2>
                         <p>Those are the skills that I use on a daily basis and I am most proficient at:</p>
                         <ul>
-                            <li><b>React</b> (including <b>React Hooks</b>)</li>
-                            <li><b>Gatsby</b></li>
+                            <li><b>React</b> (including frameworks - <b>Next.js</b> and <b>Gatsby</b>)</li>
                             <li><b>Strapi</b></li>
                             <li><b>GraphQL</b></li>
-                            <li><b>JavaScript</b></li>
+                            <li>Modern <b>JavaScript</b></li>
                             <li>Responsive, cross-browser <b>CSS/HTML</b></li>
-                            <li><b>PhotoShop CC</b></li>
+                            <li><b>Adobe PhotoShop</b></li>
                         </ul>
                         <h2 className="sub-heading">Secondary Skills</h2>
                         <p>Those are the skills that I use on a less regular basis but I am still proficient at:</p>

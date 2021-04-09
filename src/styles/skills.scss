@@ -3,7 +3,7 @@
 .banner-skills {
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 
     .double-grid {
         align-items: center;
@@ -47,7 +47,7 @@
 
 .skill-list {
     padding-top: 5rem;
-    background: radial-gradient(at left top, $neutral-color-light-2 65%, $neutral-color-light 65%);
+    background: radial-gradient(at left bottom, $neutral-color-light-2 65%, $neutral-color-light 65%);
 
     .skills {
         p {

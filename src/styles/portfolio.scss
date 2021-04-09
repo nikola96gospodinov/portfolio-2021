@@ -3,7 +3,7 @@
 .portfolio-banner {
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 
     .double-grid {
         align-items: center;
@@ -48,7 +48,7 @@
 
 .portfolio-items {
     padding-top: 7rem;
-    background: radial-gradient(at left top, $neutral-color-light-2 65%, $neutral-color-light 65%);
+    background: radial-gradient(at left bottom, $neutral-color-light-2 65%, $neutral-color-light 65%);
 
     .triple-grid {
         margin-top: 3rem;
@@ -206,7 +206,7 @@
 
         h2 {
             font-size: 1.2rem;
-            margin-bottom: 1.5rem;
+            //margin-bottom: 1.5rem;
             margin-left: 1rem;
         }
 
